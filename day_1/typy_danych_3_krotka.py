@@ -1,6 +1,7 @@
 # krotka - tuple - kolekcja niemutowalna, tylko do odczytu
 # pozwala efektywniej zarządzać pamięcią
 # krotka - zastępstwo stałych
+from mypy.plugins.ctypes import array_raw_callback
 
 tupla_imiona = ("Radek", "Tomek", "Zenek", 'Anna', "Marek")
 print(tupla_imiona)  # ('Radek', 'Tomek', 'Zenek', 'Anna', 'Marek')
@@ -73,3 +74,11 @@ print(lista)
 print(type(lista))
 # ['Radek', 'Tomek', 'Zenek', 'Anna', 'Marek']
 # <class 'list'>
+
+array = [[3, 4], [5, 6]]
+print(array)
+print(type(array))
+# [[3, 4], [5, 6]]
+# <class 'list'>
+print(array[0])  # [3, 4]
+print(array[0][0])  # 3
