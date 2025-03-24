@@ -131,3 +131,13 @@ print(liczby[0:3])  # [54, 999, 34]
 print(liczby[-2])  # 567
 print(liczby)  # [54, 999, 34, 666, 12.34, 567, 'A']
 
+# rozpakowanie sekwencji
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista_copy)
+print(krotka)  # ('Krzysztof', 'Radek', 'Zenek')
