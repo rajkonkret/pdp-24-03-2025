@@ -105,3 +105,29 @@ print(lista_copy)
 print(id(lista))  # 3063921185152
 print(id(lista_2))  # 3063921185152
 print(id(lista_copy))  # 2267724726080 inny adres w pamięci
+
+liczby = [54, 999, 34, 22, 12.34, 567]
+print(liczby)  # [54, 999, 34, 22, 12.34, 567]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)  # [12.34, 22, 34, 54, 567, 999]
+
+liczby = [54, 999, 34, 22, 12.34, 567, "A"]
+print(type(liczby))  # <class 'list'>
+# liczby.sort() # TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(lista_copy)
+lista_copy.sort()
+print(lista_copy)  # ['Krzysztof', 'Radek', 'Zenek']
+
+lista_copy.sort(reverse=True)  # ['Krzysztof', 'Radek', 'Zenek']
+
+# odwrócenie bez sortowania
+lista_copy.reverse()  # ['Krzysztof', 'Radek', 'Zenek']
+
+liczby[3] = 666
+print(liczby[0:3])  # [54, 999, 34]
+print(liczby[-2])  # 567
+print(liczby)  # [54, 999, 34, 666, 12.34, 567, 'A']
+
