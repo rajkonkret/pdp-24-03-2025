@@ -85,3 +85,23 @@ print(lista.pop(4))  # Ania zwraca element co usunął
 print(lista)
 print(lista.pop(-3))  # Tomek
 print(lista.pop())  # Maciek usunie ostatni element
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+lista_2 = lista  # a = b, kopia referencji, adresu
+print(lista_2)  # ['Radek', 'Krzysztof', 'Zenek']
+print(lista)  # ['Radek', 'Krzysztof', 'Zenek']
+lista_copy = lista.copy()  # kopia elementów listy
+lista.clear()  # usunięcie wszystkich elementów z listy
+print(lista_2)  # []
+print(lista)  # []
+print(lista_copy)
+
+print(id(lista))  # 3063921185152
+print(id(lista_2))  # 3063921185152
+print(id(lista_copy))  # 2267724726080 inny adres w pamięci
