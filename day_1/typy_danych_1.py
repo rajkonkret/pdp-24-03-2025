@@ -70,5 +70,43 @@ print(bool("Radek"))  # True
 print(bool(""))  # False
 print(bool(None))  # False None - nic, nie wiem, stan nieokreslony, odpowidnik null
 
+# and -> i
+# Expression    Evaluates to
+# True and True    True
+# True and False    False
+# False and True    False
+# False and False    False
 
+print(True and True)  # True
+print(True and False)  # False
 
+# or -> lub
+# The or Operator’s Truth Table:
+
+# Expression    Evaluates to
+# True or True    True
+# True or False    True
+# False or True    True
+# False or False    False
+
+print(True or True)  # True
+print(True or False)  # True
+
+# not - negacja
+# The not Operator’s Truth Table:
+#
+# Expression    Evaluates to
+# not True    False
+# not False
+print(not True)  # False
+
+a = 8
+b = 6
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 8 > 6 = True
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 8 < 6 = False
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 8 <= 6 = False
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 8 >= 6 = True
+print(f"Porównanie {a >= b = }")  # Porównanie a >= b = True
+print(f"Porównanie {a} == {b} = {a == b}")  # == porównannie      Porównanie 8 == 6 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # != różne             Porównanie 8 != 6 = True
