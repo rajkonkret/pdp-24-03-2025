@@ -31,6 +31,7 @@ with open("text.log", "a", encoding="utf-8") as fh:
     fh.write("Dodane\n")
     fh.write("Dodane\n")
     fh.write("Dośdane\n")
+    fh.write("Dośąźćdane\n")
 
 with open("text.log", "r", encoding="utf-8") as f:
     lines = f.read()
