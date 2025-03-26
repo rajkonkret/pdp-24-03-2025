@@ -1,6 +1,6 @@
 # stworzyc funkcję obliczającą średnią
 
-def liczby(name=None, *cyfry):
+def liczby(name=None, *cyfry):  # * dowolna ilość argumentów pozycyjnych
     start = 0
     if isinstance(name, str):
         name = name
