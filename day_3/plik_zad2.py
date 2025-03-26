@@ -2,9 +2,12 @@ import chardet
 
 # pip install chardet
 with open("text.log", "r", encoding="utf-8") as f:
-    raw_data = f.read()
+    # raw_data = f.read()
+    raw_data = f.readlines()
 
 print(raw_data)
+print(raw_data[0].strip())
+print(raw_data[-1].strip())
 
 # rb odczyt binarnie
 with open("text.log", "rb") as f:
