@@ -120,3 +120,11 @@ spam %= 1    spam = spam % 1
 # unicode casefold
 https://www.unicode.org/Public/16.0.0/ucd/CaseFolding.txt
 # 00DF; F; 0073 0073; # LATIN SMALL LETTER SHARP S
+
+pip freeze > requirements.txt
+pip install -r .\requirements.tx
+
+# pliki exe
+pip install pyinstaller
+pyinstaller --onefile --noconsole .\okno1.py
+                      --windowed
